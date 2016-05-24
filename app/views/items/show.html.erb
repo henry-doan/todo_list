@@ -1,0 +1,9 @@
+<h1>The Selected Item</h1>
+
+<h2><%= @item.name %></h2>
+	<p><%= @item.description %></p>
+	<p><%= @item.complete %></p>
+
+<%= link_to 'Back', items_path %>
+<%= link_to 'Edit', edit_item_path %>
+<%= link_to 'Delete', item_path, method: :delete %>
